@@ -3,6 +3,21 @@ body
         font-family: "Arial", sans-serif;
         max-width: 850px;
     }
+p
+    {
+        margin: 0px;
+        padding: 10px;
+    }
+h1
+    {
+        margin: 0px;
+        padding: 5px;
+    }
+.page
+    {
+        max-width: 850px;
+        max-height: 360px;
+    }
 .background
     {
         width: 850px;
@@ -142,21 +157,27 @@ h1
     }
 #leftcolumn
     {
+        background-color: lightgray;
         float: left;
         width: 328px;
+        height: -webkit-fill-available;
         margin: 0px;
         padding: 0px;
     }
-#border div
+#border
     {
         float: left;
-        width: 10px;
-        background-color: darkslategray;
+        width: 4px;
+        height: -webkit-fill-available;
+        margin-left: 3px;
+        background-color: gray;
     }
 #rightcolumn
     {
+        background-color: lightgray;
         float: right;
-        width: 512;
+        width: 512px;
+        height: -webkit-fill-available;
         margin: 0px;
         padding: 0px;
     }
@@ -171,4 +192,26 @@ h1
         max-width: 512px;
         margin: 0px;
         padding: 0px;
+    }
+.profileinfo
+    {
+        margin: 10px;
+        border: 2px solid black;
+        padding: 4px;
+    }
+.profileinfo h1
+    {
+        background-color: darkslategray;
+        text-align: center;
+    }
+.post
+    {
+        margin: 10px;
+        border: 2px solid black;
+        padding: 4px;
+    }
+.post h1
+    {
+        background-color: darkslategray;
+        font-size: 15px;
     }

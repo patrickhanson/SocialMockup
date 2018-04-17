@@ -1,3 +1,9 @@
+:root
+    {
+        --primarycolor: darkslategray;
+        --secondarycolor: gray;
+        --fillercolor: lightgray;
+    }
 body
     {
         font-family: "Arial", sans-serif;
@@ -21,12 +27,12 @@ h1
 .background
     {
         width: 850px;
-        border: 2px solid gray;
+        border: 2px solid var(--secondarycolor);
         z-index: 1;
     }
 #top
     {
-        background-color: darkslategray;
+        background-color: var(--primarycolor);
         width: 850px;
         height: 300px;
         margin: 0px;
@@ -36,7 +42,7 @@ h1
     }
 #bottom
     {
-        background-color: gray;
+        background-color: var(--secondarycolor);
         width: 850px;
         height: 50px;
         margin: 0px;
@@ -72,11 +78,11 @@ h1
 #like
     {
         width: 40px;
-        background-color: lightgray;
+        background-color: var(--fillercolor);
         position: relative;
         top: 200px;
         left: 500px;
-        border: 1px solid gray;
+        border: 1px solid var(--secondarycolor);
         padding: 0px;
         margin: 0px;
         text-align: center;
@@ -84,11 +90,11 @@ h1
     }
 #various p
     {
-        background-color: lightgray;
+        background-color: var(--fillercolor);
         width: 70px;
         z-index: 2;
         line-height: 1em;
-        border: 1px solid gray;
+        border: 1px solid var(--secondarycolor);
         font-size: 15px;
         padding: 0px;
         margin: 0px;
@@ -157,7 +163,7 @@ h1
     }
 #leftcolumn
     {
-        background-color: lightgray;
+        background-color: var(--fillercolor);
         float: left;
         width: 328px;
         height: -webkit-fill-available;
@@ -170,11 +176,11 @@ h1
         width: 4px;
         height: -webkit-fill-available;
         margin-left: 3px;
-        background-color: gray;
+        background-color: var(--secondarycolor);
     }
 #rightcolumn
     {
-        background-color: lightgray;
+        background-color: var(--fillercolor);
         float: right;
         width: 512px;
         height: -webkit-fill-available;
@@ -201,7 +207,7 @@ h1
     }
 .profileinfo h1
     {
-        background-color: darkslategray;
+        background-color: var(--primarycolor);
         text-align: center;
     }
 .post
@@ -212,6 +218,6 @@ h1
     }
 .post h1
     {
-        background-color: darkslategray;
+        background-color: var(--primarycolor);
         font-size: 15px;
     }
